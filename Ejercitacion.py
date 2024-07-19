@@ -43,6 +43,28 @@ if anio_bisiesto(anio_actual):
 else:
     print(f'El año {anio_actual} no es bisiesto.')
 
+#Ejercicio5 
+def calcular_descuento(monto_compra):
+    if monto_compra >= 100:
+        descuento = monto_compra * 0.1  # 10% de descuento si la compra es >= $100
+    else:
+        descuento = monto_compra * 0.05  # 5% de descuento si la compra es < $100
+    
+    monto_final = monto_compra - descuento
+    return monto_final
+
+
+monto_compra = float(input("Ingrese el monto de la compra: "))
+
+
+monto_final = calcular_descuento(monto_compra)
+
+
+print(f"El monto final a pagar es: ${monto_final:.2f}")
+
+
+
+
 
 
 
